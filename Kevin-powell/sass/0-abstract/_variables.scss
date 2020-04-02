@@ -1,22 +1,10 @@
-// color-theory
-
-$primaryColor: #29274C;
-$secondaryColor: #fff;
-$secondaryDarkcolor: #A49DB3;
-$hoverColor: #EC586C;
-$dark-textColor: #C77FFF;
-
-//  rwd-breakpoints
-
+// breakPoints
+ 
+// mobile
 $break1: "(max-width: 768px)";
-$break2: "(min-width: 769px) and (max-width: 1199px)";
-$break3: "(min-width: 1200px)";
 
-// font-weight
+// tablet
+$break2: "(min-width: 769px) and (max-width: 1400px)";
 
-$fontWeights : (
-    "regular": 400,
-    "light": 500,
-    "bold": 900,
-    
-)
+// desktop
+$break3: "(min-width: 1401px)";
