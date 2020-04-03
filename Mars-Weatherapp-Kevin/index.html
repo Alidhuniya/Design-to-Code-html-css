@@ -24,6 +24,7 @@
 
             <div class="container__wind">
                 <div class="container__eclipse">
+                    <p class="container__srOnly"></p>
                     <div class="container__degreeArrow"></div>
                 </div>
                 <span class="container__span1">Wind</span>
@@ -41,11 +42,21 @@
                    <p class="container__p5">This is only a part of InSight’s mission. <a href="#">Click here</a> to find out more.</p>
                </div>
 
-               <div class="container__tempSwitch">
+               <div class="container__tempSwitch unit">
+                <label for="cel">°C</label>
+                <input type="radio" id="cel" name="unit" checked>
+                <!-- when unit__toggle is clicked
+                     checkbox needs to change -->
+                <button class="container__toggleIcon unit__toggle" data-unit-toggle></button>
+                <label for="fah">°F</label>
+                <input type="radio" id="fah" name="unit">
+              </div> 
+
+               <!-- <div class="container__tempSwitch">
                    <p class="container__celsius">°C</p>
                    <p class="container__toggleIcon"></p>
                    <p class="container__fahrenheit">°F</p>
-               </div>
+               </div> -->
            </div>
        </section>
    </main>
