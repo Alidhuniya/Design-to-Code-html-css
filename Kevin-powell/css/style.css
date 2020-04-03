@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-size: inherit;
@@ -107,7 +107,6 @@ body {
 }
 
 .header__nav .header__logo .header__h3 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   text-transform: uppercase;
   font-weight: 900;
@@ -136,7 +135,6 @@ body {
   padding-top: 0em;
   padding-right: 2.7em;
   padding-left: 1.5em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #0c0e36;
@@ -196,7 +194,6 @@ body {
 
 .header__weatherDesc1,
 .header__weatherDesc2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: 10px;
   line-height: 12px;
@@ -226,11 +223,11 @@ body {
 }
 
 .header__weatherStatus1 {
-  padding-top: 1.3em;
+  padding-top: 1em;
 }
 
 .header__hr {
-  margin-top: 0.7em;
+  margin-top: 0.5em;
   opacity: 0.3;
   border-bottom: 1px solid #8a8a9d;
 }
@@ -290,7 +287,6 @@ body {
 }
 
 .container__h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 48px;
   line-height: 102.8%;
@@ -304,7 +300,6 @@ body {
 }
 
 .container__p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -359,7 +354,6 @@ body {
   left: 16.17%;
   right: 16.17%;
   top: 30.61%;
-  bottom: 30.61%;
   color: #f70058;
   font-weight: 900;
   font-size: 1rem;

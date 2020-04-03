@@ -11,3 +11,13 @@
 @mixin alignSelf ($single-ColumnAlignment) {
     align-self: $single-ColumnAlignment;
 }
+
+// grid
+
+@mixin grid ($rows, $columns,  $row-gap, $column-gap) {
+    display: grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+    grid-row-gap: $row-gap;
+    grid-column-gap: $column-gap;
+}

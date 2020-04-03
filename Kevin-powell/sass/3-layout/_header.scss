@@ -1,9 +1,10 @@
 
 .header__nav {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 3rem;
+  @include grid (null, repeat(2,1fr), null, 3rem );
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   grid-column-gap: 3rem;
   position: absolute;
   height: 83px;
   padding: 2em;
@@ -34,8 +35,6 @@
     }
 
     .header__h3 {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-style: normal;
       text-transform: uppercase;
       font-weight: 900;
@@ -46,8 +45,7 @@
     }
   }
   .header__menus {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid (null, repeat(2,1fr), null, null);
   }
 }
 
@@ -59,8 +57,6 @@
   padding-top: 0em;
   padding-right: 2.7em;
   padding-left: 1.5em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
 
   text-transform: uppercase;
@@ -77,9 +73,9 @@
 }
 
 .header__weatherStatus {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  // grid-row-gap: 1em;
+    @include grid (repeat(2,1fr), null, null, null );
+//   display: grid;
+//   grid-template-rows: repeat(2, 1fr);
   background: #0c0e36;
   height: 83px;
   margin-top: -2em;
@@ -111,8 +107,7 @@
 
 .header__weatherDesc1,
 .header__weatherDesc2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
   font-weight: 700;
   font-size: 10px;
   line-height: 12px;
@@ -142,11 +137,11 @@
 }
 
 .header__weatherStatus1 {
-  padding-top: 1.3em;
+  padding-top: 1em;
 }
 
 .header__hr {
-  margin-top: 0.7em;
+  margin-top: 0.5em;
   opacity: 0.3;
   border-bottom: 1px solid #8a8a9d;
 }
