@@ -1,0 +1,152 @@
+
+.header__nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  position: absolute;
+  height: 83px;
+  padding: 2em;
+  
+
+  @media #{$break2} {
+    display: block;
+    padding: 0.3em;
+  }
+
+  @media #{$break1} {
+    display: block;
+  }
+  .header__logo {
+    padding-left: 14em;
+    color: #0c0e36;
+
+    @media #{$break2} {
+      margin-left: -12.5em;
+      letter-spacing: 0.8em;
+    }
+
+    @media #{$break1} {
+      margin-left: -9em;
+      letter-spacing: 0.3em;
+      margin-top: -1em;
+      padding-bottom: 0.5em;
+    }
+
+    .header__h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-style: normal;
+      text-transform: uppercase;
+      font-weight: 900;
+
+      @media #{$break1} {
+        text-align: center;
+      }
+    }
+  }
+  .header__menus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.header__ul {
+  display: flex;
+}
+
+.header__list {
+  padding-top: 0em;
+  padding-right: 2.7em;
+  padding-left: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  color: #0c0e36;
+
+  @media #{$break2} {
+    padding-top: 1em;
+  }
+  @media #{$break1} {
+    display: grid;
+    justify-items: center;
+  }
+}
+
+.header__weatherStatus {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  // grid-row-gap: 1em;
+  background: #0c0e36;
+  height: 83px;
+  margin-top: -2em;
+  margin-left: 5em;
+  margin-right: -2em;
+
+  @media #{$break1} {
+    display: none;
+  }
+}
+
+.header__spanImage {
+  position: absolute;
+  background: #f70058;
+  top: 0;
+  width: 75px;
+  height: 83px;
+
+  @media #{$break1} {
+    display: none;
+  }
+}
+
+.header__weatherIcon {
+  padding-top: 1.5em;
+  padding-left: 0.6em;
+  padding-right: 0.5em;
+}
+
+.header__weatherDesc1,
+.header__weatherDesc2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  opacity: 0.7;
+}
+
+.header__weatherTemp {
+  color: #fff;
+  padding-left: 1em;
+}
+
+.header__weatherStatus1,
+.header__weatherStatus2 {
+  padding-left: 0.7em;
+  padding-top: 0.5em;
+
+  @media #{$break2} {
+    text-align: center;
+  }
+}
+
+.header__weatherStatus1 {
+  padding-top: 1.3em;
+}
+
+.header__hr {
+  margin-top: 0.7em;
+  opacity: 0.3;
+  border-bottom: 1px solid #8a8a9d;
+}

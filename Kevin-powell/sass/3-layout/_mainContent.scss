@@ -1,0 +1,127 @@
+.container {
+  position: absolute;
+  margin-top: 5.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.container__content {
+  //   display: grid;
+  //   grid-template-rows: repeat(3, 1fr);
+  //   grid-row-gap: 1.5em;
+
+  .container__heading {
+    position: absolute;
+    width: 538px;
+    height: 116px;
+    left: 230px;
+    top: 195px;
+
+    @media all and #{$break2} {
+      left: 14px;
+      top: 60px;
+    }
+
+    @media all and #{$break1} {
+      left: 7px;
+      top: 40px;
+      width: 320px;
+    }
+  }
+
+  .container__desc {
+    position: absolute;
+    width: 615px;
+    height: 117px;
+    left: 230px;
+    top: 325px;
+
+    @media all and #{$break2} {
+      left: 12px;
+      top: 190px;
+      width: 470px;
+    }
+
+    @media all and #{$break1} {
+      left: 12px;
+      top: 145px;
+      width: 320px;
+    }
+  }
+}
+
+.container__h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 102.8%;
+  color: #0c0e36;
+
+  @media all and #{$break1} {
+    font-size: 2.5rem;
+  }
+}
+
+.container__p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a3a3a;
+
+  @media all and #{$break1} {
+    font-size: 1rem;
+    line-height: 15px;
+  }
+}
+
+.container__buttons {
+  position: absolute;
+  left: 225px;
+  top: 515px;
+
+  @media all and #{$break2} {
+    left: 6px;
+    top: 390px;
+  }
+
+  @media all and #{$break1} {
+    left: 6px;
+    top: 285px;
+  }
+
+  // nesting
+  .container__span1 {
+    width: 240px;
+    height: 49px;
+    background: #f70058;
+    padding: 15px 18px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .container__span2 {
+    width: 240px;
+    height: 49px;
+    border: 5px solid #f70058;
+    padding: 9px 18px;
+    left: 16.17%;
+    right: 16.17%;
+    top: 30.61%;
+    bottom: 30.61%;
+    color: #f70058;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-left: 1.3rem;
+    cursor: pointer;
+  }
+  // nesting-end
+}
