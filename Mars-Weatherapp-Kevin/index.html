@@ -1,117 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mars Weather App by Kevin Powell</title>
-    <link rel="stylesheet" href="css/minified/style.min.css">
-</head>
-<body>
-   <main class="container">
-       <section class="container__content">
-           <h1 class="container__heading">LATEST WEATHER AT ELYSIUM PLANTITIA</h1>
-           <div class="container__detail">
-               <div class="container__date">
-                   <h1 class="container__h1">Sol 377</h1>
-                   <p class="container__p1">December 18</p>
-               </div>
+    <link rel="stylesheet" href="css/minified/style.min.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="container__content">
+        <h1 class="container__heading">LATEST WEATHER AT ELYSIUM PLANTITIA</h1>
+        <div class="container__detail">
+          <div class="container__date">
+            <h1 class="container__h1">Sol 377</h1>
+            <p class="container__p1">December 18</p>
+          </div>
 
-               <div class="container__temp">
-                <h3 class="container__h3">Temperature</h3>
-                <p class="container__p2">High: -20°C</p>
-                <p class="container__p3">Low: -98°C</p>
+          <div class="container__temp">
+            <h3 class="container__h3">Temperature</h3>
+            <p class="container__p2">High: -20°C</p>
+            <p class="container__p3">Low: -98°C</p>
+          </div>
+
+          <div class="container__wind">
+            <div class="container__eclipse">
+              <p class="container__srOnly"></p>
+              <div class="container__degreeArrow"></div>
             </div>
-
-            <div class="container__wind">
-                <div class="container__eclipse">
-                    <p class="container__srOnly"></p>
-                    <div class="container__degreeArrow"></div>
-                </div>
-                <div class="container__windMeasurement">
-                <p class="container__span1">Wind</p>
-                <p class="container__span2">75 kph</p>
+            <div class="container__windMeasurement">
+              <p class="container__span1">Wind</p>
+              <p class="container__span2">75 kph</p>
             </div>
-            </div>
-           </div>
-           <div class="container__desc">
-            <p class="container__descp1">InSight is taking daily weather measurements (temperature, wind, pressure) on <br /> the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.</p>
-           </div>
+          </div>
+        </div>
+        <div class="container__desc">
+          <p class="container__descp1">
+            InSight is taking daily weather measurements (temperature, wind,
+            pressure) on <br />
+            the surface of Mars at Elysium Planitia, a flat, smooth plain near
+            Mars’ equator.
+          </p>
+        </div>
 
-           <div class="container__switch">
-               <div class="container__switchDesc">
-                   <p class="container__p5 container__descp1">This is only a part of InSight’s mission. <a class="container__link" href="#">Click here</a> to find out more.</p>
-               </div>
+        <div class="container__switch">
+          <div class="container__switchDesc">
+            <p class="container__p5 container__descp1">
+              This is only a part of InSight’s mission.
+              <a class="container__link" href="#">Click here</a> to find out
+              more.
+            </p>
+          </div>
 
-               <div class="container__tempSwitch ">
-                <label class="container__celsius" for="cel">°C</label>
-                <input type="radio" id="cel" name="unit" checked>
-                <!-- when unit__toggle is clicked
+          <div class="container__tempSwitch ">
+            <label class="container__celsius" for="cel">°C</label>
+            <input type="radio" id="cel" name="unit" checked />
+            <!-- when unit__toggle is clicked
                      checkbox needs to change -->
-                <button class="container__toggleIcon unit__toggle" data-unit-toggle></button>
-                <label class="container__fahrenheit" for="fah">°F</label>
-                <input type="radio" id="fah" name="unit">
-              </div> 
+            <button
+              class="container__toggleIcon unit__toggle"
+              data-unit-toggle
+            ></button>
+            <label class="container__fahrenheit" for="fah">°F</label>
+            <input type="radio" id="fah" name="unit" />
+          </div>
+        </div>
+      </section>
+    </main>
 
-           </div>
-       </section>
-   </main>
+    <footer class="footer">
+      <div class="previous-weather">
+        <!-- When clicked, toggle '.show-weather'
+        to .previous-weather div -->
+        <button for="weather-toggle" class="show-previous-weather">
+          <span>&#8593;</span> <span class="footer__spanRead"></span>
+        </button>
+        <h2 class="footer__h3 previous-weather__title">Previous 10 days</h2>
+        <div class="previous-days" data-previous-sols></div>
+      </div>
 
-   <footer class="footer">
-       <div class="footer__arrowPointer"></div>
-       <h3 class="footer__h3">Previous 10 days</h3>
-
-       <section class="footer__previousDetail">
-
-           <div class="footer__details">
-               <h4 class="footer__title">Sol 371</h4>
-               <p class="footer__date">December 12</p>
-               <p class="footer__temp1">High: -20°C</p>
-               <p class="footer__temp2">Low: -98°C</p>
-           </div>
-
-           <div class="footer__details">
-            <h4 class="footer__title">Sol 372</h4>
-            <p class="footer__date">December 13</p>
-            <p class="footer__temp1">High: -20°C</p>
-            <p class="footer__temp2">Low: -98°C</p>
+      <section class="footer__previousDetail">
+        <div class="footer__details">
+          <h4 class="footer__title">Sol 371</h4>
+          <p class="footer__date">December 12</p>
+          <p class="footer__temp1">High: -20°C</p>
+          <p class="footer__temp2">Low: -98°C</p>
         </div>
 
         <div class="footer__details">
-            <h4 class="footer__title">Sol 373</h4>
-            <p class="footer__date">December 14</p>
-            <p class="footer__temp1">High: -20°C</p>
-            <p class="footer__temp2">Low: -98°C</p>
+          <h4 class="footer__title">Sol 372</h4>
+          <p class="footer__date">December 13</p>
+          <p class="footer__temp1">High: -20°C</p>
+          <p class="footer__temp2">Low: -98°C</p>
         </div>
 
         <div class="footer__details">
-            <h4 class="footer__title">Sol 374</h4>
-            <p class="footer__date">December 15</p>
-            <p class="footer__temp1">High: -20°C</p>
-            <p class="footer__temp2">Low: -98°C</p>
+          <h4 class="footer__title">Sol 373</h4>
+          <p class="footer__date">December 14</p>
+          <p class="footer__temp1">High: -20°C</p>
+          <p class="footer__temp2">Low: -98°C</p>
         </div>
 
         <div class="footer__details">
-            <h4 class="footer__title">Sol 375</h4>
-            <p class="footer__date">December 16</p>
-            <p class="footer__temp1">High: -20°C</p>
-            <p class="footer__temp2">Low: -98°C</p>
+          <h4 class="footer__title">Sol 374</h4>
+          <p class="footer__date">December 15</p>
+          <p class="footer__temp1">High: -20°C</p>
+          <p class="footer__temp2">Low: -98°C</p>
         </div>
 
         <div class="footer__details">
-            <h4 class="footer__title">Sol 376</h4>
-            <p class="footer__date">December 17</p>
-            <p class="footer__temp1">High: -20°C</p>
-            <p class="footer__temp2">Low: -98°C</p>
+          <h4 class="footer__title">Sol 375</h4>
+          <p class="footer__date">December 16</p>
+          <p class="footer__temp1">High: -20°C</p>
+          <p class="footer__temp2">Low: -98°C</p>
         </div>
 
         <div class="footer__details">
-            <h4 class="footer__title">Sol 377</h4>
-            <p class="footer__date">December 18</p>
-            <p class="footer__temp1">High: -20°C</p>
-            <p class="footer__temp2">Low: -98°C</p>
+          <h4 class="footer__title">Sol 376</h4>
+          <p class="footer__date">December 17</p>
+          <p class="footer__temp1">High: -20°C</p>
+          <p class="footer__temp2">Low: -98°C</p>
         </div>
-       </section>
 
-   </footer>
-</body>
+        <div class="footer__details">
+          <h4 class="footer__title">Sol 377</h4>
+          <p class="footer__date">December 18</p>
+          <p class="footer__temp1">High: -20°C</p>
+          <p class="footer__temp2">Low: -98°C</p>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>

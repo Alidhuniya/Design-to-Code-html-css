@@ -116,7 +116,8 @@ p {
   letter-spacing: 1.5px;
 }
 
-.container__p2, .container__p3 {
+.container__p2,
+.container__p3 {
   color: #989898;
   font-size: 1.5rem;
   font-weight: normal;
@@ -194,7 +195,7 @@ p {
   line-height: 20px;
   letter-spacing: -0.015em;
   font-weight: normal;
-  color: #928A84;
+  color: #928a84;
 }
 
 .container__p5 {
@@ -206,10 +207,11 @@ p {
   color: #d06d70;
 }
 
-.container__fahrenheit, .container__celsius {
-  color: #928A84;
+.container__fahrenheit,
+.container__celsius {
+  color: #928a84;
   font-weight: bold;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   font-size: 1.5rem;
 }
 
@@ -230,7 +232,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  opacity: .7;
+  opacity: 0.7;
   -webkit-transition: opacity 275ms linear;
   transition: opacity 275ms linear;
 }
@@ -265,7 +267,7 @@ p {
 }
 
 .container__tempSwitch .container__toggleIcon::after {
-  content: '';
+  content: "";
   display: block;
   background: #fff;
   border-radius: 50%;
@@ -277,5 +279,134 @@ p {
 
 :checked ~ .unit__toggle::after {
   margin-left: 3px;
+}
+
+.previous-weather {
+  background: #fff;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: -webkit-transform 350ms ease;
+  transition: -webkit-transform 350ms ease;
+  transition: transform 350ms ease;
+  transition: transform 350ms ease, -webkit-transform 350ms ease;
+  padding: 3rem;
+}
+
+.show-previous-weather {
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  width: 20rem;
+  -webkit-transform: translate(-50%, calc(-100% - 3rem));
+          transform: translate(-50%, calc(-100% - 3rem));
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 1;
+  -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+          clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  cursor: pointer;
+  color: #989898;
+  border: 0;
+  font-family: inherit;
+}
+
+.show-previous-weather:hover, .show-previous-weather:focus {
+  color: #444;
+}
+
+.show-previous-weather span {
+  color: #7e7e7e;
+  font-weight: bold;
+  display: block;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.previous-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.previous-weather__title {
+  text-align: center;
+}
+
+.footer__h3 {
+  color: #4d1919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.245em;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-left: 4.5rem;
+}
+
+.footer__spanRead:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 10px;
+}
+
+.footer__previousDetail {
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__title {
+  color: #575757;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.footer__date {
+  color: #989898;
+  font-size: 1.3rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer__temp1,
+.footer__temp2 {
+  letter-spacing: -0.015em;
+  font-size: 1.7rem;
+  color: #575757;
+  font-weight: 500;
+}
+
+.footer__details {
+  margin-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
