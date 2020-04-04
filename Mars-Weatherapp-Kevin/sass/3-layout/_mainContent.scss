@@ -1,0 +1,199 @@
+.container {
+  background-image: url(../../img/mars.jpg);
+  background-size: cover;
+  height: 685px;
+}
+
+.container__content {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  width: 70.6rem;
+  height: 26.8rem;
+  margin-top: 9rem;
+  margin-left: 7.5rem;
+  color: #fff;
+}
+
+.container__heading {
+  color: #d06d70;
+  font-size: 2rem;
+  padding-left: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 2.8rem;
+  font-style: normal;
+  font-weight: 10;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: normal;
+}
+
+.container__detail {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -3rem;
+    flex-wrap: wrap;
+}
+
+.container__h1 {
+    font-size: 4.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: -0.015em;
+}
+
+.container__p1 {
+    color: #989898;
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+
+.container__h3 {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+
+.container__p2, .container__p3 {
+    color: #989898;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.container__span1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.container__span2 {
+    font-size: 2rem;
+}
+
+.container__sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .container__eclipse {
+    --size: 6rem;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.5);
+    display: grid;
+    place-items: center;
+    grid-row: 1 / span 2;
+    
+    
+  }
+
+  .container__degreeArrow {
+    --direction: 45deg;
+    --size: 1rem;
+    height: calc(var(--size) * 3);
+    width: var(--size);
+    background: #613131;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    transform: translateY(-50%) rotate(var(--direction));
+    transform-origin: bottom center;
+    transition: transform 500ms ease;
+  }
+
+  .container__wind {
+      display: flex;
+  }
+
+  .container__windMeasurement {
+      margin-left: 2rem;
+  }
+
+  .container__desc {
+      margin-top: 2.5rem;
+      margin-left: 3.5rem;
+  }
+  .container__descp1 {
+    font-size: 1.1rem;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+    font-weight: normal;
+    color: #928A84;
+  }
+.container__p5 {
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+}
+
+.container__link {
+    color: #d06d70;
+}
+
+.container__fahrenheit, .container__celsius {
+    color: #928A84;
+    font-weight: bold;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    
+}
+
+
+.container__switch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__tempSwitch {
+    align-self: flex-end;
+    padding-right: 5rem;
+
+    
+    color: #fff;
+    display: flex;
+    opacity: .7;
+    transition: opacity 275ms linear;
+
+    &:hover {
+        opacity: 1;
+    }
+
+   label {
+        cursor: pointer;
+    }
+
+    input {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .container__toggleIcon {
+        cursor: pointer;
+        width: 4em;
+        border: 2px solid #fff;
+        background: transparent;
+        padding: 0;
+        border-radius: 100vmax;
+        margin: 0 1em;
+
+        &::after {
+            content: '';
+            display: block;
+            background: #fff;
+            border-radius: 50%;
+            height: 1rem;
+            margin: 3px;
+            margin-left: auto;
+            width: 1rem;
+        }
+    }
+}
+
+:checked ~ .unit__toggle::after {
+    margin-left: 3px;
+}

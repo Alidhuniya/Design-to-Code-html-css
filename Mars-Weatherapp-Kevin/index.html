@@ -9,7 +9,7 @@
 <body>
    <main class="container">
        <section class="container__content">
-           <h1>LATEST WEATHER AT ELYSIUM PLANTITIA</h1>
+           <h1 class="container__heading">LATEST WEATHER AT ELYSIUM PLANTITIA</h1>
            <div class="container__detail">
                <div class="container__date">
                    <h1 class="container__h1">Sol 377</h1>
@@ -27,36 +27,31 @@
                     <p class="container__srOnly"></p>
                     <div class="container__degreeArrow"></div>
                 </div>
-                <span class="container__span1">Wind</span>
-                <span class="container__span2">75 kph</span>
+                <div class="container__windMeasurement">
+                <p class="container__span1">Wind</p>
+                <p class="container__span2">75 kph</p>
+            </div>
             </div>
            </div>
            <div class="container__desc">
-               <p class="container__p4">
-                InSight is taking daily weather measurements (temperature, wind, pressure) on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.  
-               </p>
+            <p class="container__descp1">InSight is taking daily weather measurements (temperature, wind, pressure) on <br /> the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.</p>
            </div>
 
            <div class="container__switch">
                <div class="container__switchDesc">
-                   <p class="container__p5">This is only a part of InSight’s mission. <a href="#">Click here</a> to find out more.</p>
+                   <p class="container__p5 container__descp1">This is only a part of InSight’s mission. <a class="container__link" href="#">Click here</a> to find out more.</p>
                </div>
 
-               <div class="container__tempSwitch unit">
-                <label for="cel">°C</label>
+               <div class="container__tempSwitch ">
+                <label class="container__celsius" for="cel">°C</label>
                 <input type="radio" id="cel" name="unit" checked>
                 <!-- when unit__toggle is clicked
                      checkbox needs to change -->
                 <button class="container__toggleIcon unit__toggle" data-unit-toggle></button>
-                <label for="fah">°F</label>
+                <label class="container__fahrenheit" for="fah">°F</label>
                 <input type="radio" id="fah" name="unit">
               </div> 
 
-               <!-- <div class="container__tempSwitch">
-                   <p class="container__celsius">°C</p>
-                   <p class="container__toggleIcon"></p>
-                   <p class="container__fahrenheit">°F</p>
-               </div> -->
            </div>
        </section>
    </main>
