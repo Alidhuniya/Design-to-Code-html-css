@@ -1,3 +1,3 @@
 ##  [live preview: link](https://alidhuniya.github.io/Design-to-Code/Kevin-powell/)
-## [Design: link](https://www.figma.com/file/GwRmx1FJ31evTNq6hpCpCs/Amazing-Mountain?node-id=0%3A1)
-## [youtube tutorial: link](https://www.youtube.com/watch?v=hQCRU7hZldE&list=PL-ZW1unRt6AunPzIIfcJmCzWIMbnywff2&index=9)
+## [Design: link](https://www.figma.com/file/In5futJ5wIDWhJ1P9A3Omi/Untitled?node-id=8%3A11)
+## [youtube tutorial: link](https://www.youtube.com/watch?v=LLsrgqnFet0)
