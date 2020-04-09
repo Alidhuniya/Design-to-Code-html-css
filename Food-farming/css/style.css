@@ -57,8 +57,8 @@ p {
 }
 
 .container__btn {
-  background: #fffaf3;
-  border: 2px solid #c08d5d;
+  background: #C08D5D;
+  border: 2px solid #fffaf3a4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-style: normal;
@@ -68,9 +68,9 @@ p {
   padding: 1rem;
   cursor: pointer;
   letter-spacing: 0.06em;
-  color: #3f4042;
+  color: #fff;
   width: 190px;
-  height: 60px;
+  height: 70px;
 }
 
 .header__logo {
@@ -78,12 +78,12 @@ p {
   height: 26px;
   position: absolute;
   left: 60px;
-  top: 70px;
+  top: 40px;
 }
 
 .nav__order {
   margin-left: 16rem;
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +156,95 @@ p {
 @media all and (max-width: 400px) {
   .header__logo {
     display: none;
+  }
+}
+
+.container {
+  background: #fffaf3;
+  margin-top: 3em;
+  width: 90%;
+  margin-left: 4rem;
+  padding: 5rem 7rem 7rem 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 67px;
+  /* identical to box height */
+  letter-spacing: 0.06em;
+  color: #3f4042;
+}
+
+.container__treeImg {
+  width: 30.52px;
+  height: 50.82px;
+}
+
+.container__h1 {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 93px;
+  letter-spacing: 0.06em;
+  color: #3f4042;
+}
+
+.container__lineImg {
+  width: 195px;
+  height: 24.03px;
+}
+
+.container__p {
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 147.6%;
+  letter-spacing: 0.06em;
+  color: #3f4042;
+  padding-bottom: 2rem;
+  max-width: 50ch;
+}
+
+.container__img {
+  margin-top: -5rem;
+  margin-left: -4rem;
+  width: 660px;
+  height: 755px;
+  background: url(../../img/grapes.svg);
+}
+
+@media all and (max-width: 1400px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container__img {
+    margin-top: 3rem;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .container {
+    margin-left: 0rem;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
