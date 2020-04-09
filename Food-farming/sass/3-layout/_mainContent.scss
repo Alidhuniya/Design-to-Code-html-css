@@ -4,18 +4,14 @@
   width: 90%;
   margin-left: 4rem;
   padding: 5rem 7rem 7rem 7rem;
-
   display: flex;
 }
 .container__h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.333rem;
   line-height: 67px;
-  /* identical to box height */
-
   letter-spacing: 0.06em;
-
   color: #3f4042;
 }
 
@@ -31,7 +27,6 @@
   font-size: 4.5rem;
   line-height: 93px;
   letter-spacing: 0.06em;
-
   color: #3f4042;
 }
 
@@ -53,32 +48,29 @@
 }
 
 .container__img {
-    margin-top: -5rem;
-    margin-left: -4rem;
+  margin-top: -5rem;
+  margin-left: -4rem;
   width: 660px;
   height: 755px;
-   background: url(../../img/grapes.svg);
-  
+  background: url(../../img/grapes.svg);
 }
 
-@media all and (max-width:1400px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+@media all and (max-width: 1400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .container__img {
-        margin-top: 3rem;
-    }
+  .container__img {
+    margin-top: 3rem;
+  }
 }
 
-@media all and (max-width:430px) {
-    .container {
-        margin-left: 0rem;
-        width: 100%;
-    }
+@media all and (max-width: 430px) {
+  .container {
+    margin-left: 0rem;
+    width: 100%;
+  }
 }
-
-   

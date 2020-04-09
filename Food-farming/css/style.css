@@ -95,7 +95,7 @@ p {
           align-items: center;
 }
 
-.nav__list {
+.nav__order .nav__list {
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
@@ -104,20 +104,20 @@ p {
   color: #000000;
 }
 
-.nav__active {
-  color: #C08D5D;
+.nav__order .nav__active {
+  color: #c08d5d;
   font-style: normal;
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 27px;
 }
 
-.nav__treeLogo {
+.nav__order .nav__treeLogo {
   width: 38.64px;
   height: 59px;
 }
 
-.nav__middleTree {
+.nav__order .nav__middleTree {
   margin-left: -11rem;
   margin-right: 2rem;
 }
@@ -173,9 +173,8 @@ p {
 .container__h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.333rem;
   line-height: 67px;
-  /* identical to box height */
   letter-spacing: 0.06em;
   color: #3f4042;
 }
