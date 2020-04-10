@@ -381,4 +381,57 @@ p {
   right: -9rem;
   position: relative;
 }
+
+.contagion {
+  background: #fdfdfd;
+}
+
+.contagion__heading {
+  margin-top: 12.5rem;
+  margin-left: 15rem;
+  margin-bottom: 5rem;
+}
+
+.contagion__h3,
+.contagion__h1,
+.contagion__p {
+  text-align: center;
+}
+
+.contagion__h3 {
+  color: #fa5652;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.contagion__h1 {
+  text-transform: capitalize;
+  font-style: normal;
+  font-size: 3.5rem;
+  color: #035755;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+.contagion__prg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contagion__p {
+  max-width: 50ch;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 190%;
+  text-transform: capitalize;
+  color: #4b4f51;
+  margin-left: -5rem;
+}
 /*# sourceMappingURL=style.css.map */
