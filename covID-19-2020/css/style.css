@@ -364,4 +364,21 @@ p {
     margin-top: -9rem;
   }
 }
+
+.about__rightFixed {
+  width: 172px;
+  height: 320px;
+  float: right;
+  top: -18rem;
+  position: relative;
+}
+
+.about__rightFixed1 {
+  width: 100px;
+  height: 300px;
+  float: right;
+  top: 4rem;
+  right: -9rem;
+  position: relative;
+}
 /*# sourceMappingURL=style.css.map */
