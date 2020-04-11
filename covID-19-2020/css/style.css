@@ -37,7 +37,6 @@ body {
 img {
   max-width: 100%;
   width: 100%;
-  display: block;
 }
 
 ul,
@@ -499,5 +498,29 @@ p {
 
 .card1 {
   border-bottom: 5px solid #FA5652;
+}
+
+.symptoms__p {
+  max-width: 71ch;
+}
+
+.symptoms__h3,
+.symptoms__h1 {
+  margin-left: -7rem;
+}
+
+@media all and (max-width: 1067px) {
+  .contagion__heading {
+    margin-top: 12.5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+  .symptoms__p {
+    max-width: 55ch;
+  }
+  .symptoms__h3,
+  .symptoms__h1 {
+    margin-left: 0rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
