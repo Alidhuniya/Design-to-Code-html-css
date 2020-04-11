@@ -1,0 +1,74 @@
+.contact {
+  background: linear-gradient(
+    360deg,
+    rgba(255, 241, 241, 0.5) 0%,
+    rgba(255, 241, 241, 0) 108.69%
+  );
+  padding-bottom: 10rem;
+}
+
+.contact__heading {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 80px;
+  color: #0c6c44;
+}
+
+.contact__h3 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 64px;
+  color: #0c6c44;
+}
+
+.contact__send {
+    display: flex;
+    justify-content: center;
+}
+.contact__newsLetter {
+   
+   font-size: 3rem;
+   padding-left: 2rem;
+  width: 60%;
+  height: 114px;
+  color: #758681;
+  background: #FFFFFF;
+box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+border-radius: 57px;
+border: 3px solid red;
+
+}
+
+
+
+.contact__btn {
+    width: 209px;
+height: 78px;
+background: #F44A45;
+border-radius: 157px;
+font-style: normal;
+font-weight: 500;
+font-size: 3rem;
+cursor: pointer;
+color: #FFFFFF;
+margin-top: 1rem;
+margin-left: -16rem;
+}
+
+@media all and (max-width: 1330px) {
+    .contact__send {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
