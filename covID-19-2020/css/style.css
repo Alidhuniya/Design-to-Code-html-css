@@ -643,4 +643,37 @@ p {
   width: 455px;
   height: 500px;
 }
+
+.prevention__fixed-left {
+  width: 130px;
+  height: 320px;
+  float: left;
+  top: -18rem;
+  position: relative;
+}
+
+.prevention__rightFixed {
+  width: 209px;
+  height: 375px;
+  float: right;
+  position: relative;
+  left: 11rem;
+  margin-top: 12rem;
+}
+
+.prevention__rightFixed0 {
+  float: right;
+  margin-top: -3rem;
+  width: 100px;
+  height: 300px;
+  position: relative;
+  -webkit-filter: invert(59%) sepia(44%) saturate(7049%) hue-rotate(129deg) brightness(91%) contrast(70%);
+          filter: invert(59%) sepia(44%) saturate(7049%) hue-rotate(129deg) brightness(91%) contrast(70%);
+}
+
+@media all and (max-width: 948px) {
+  .prevention__rightFixed, .prevention__rightFixed0 {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

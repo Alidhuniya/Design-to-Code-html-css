@@ -65,7 +65,7 @@
 .prevention__desp {
   width: 532px;
   padding-left: 1.7rem;
- 
+
   //   height: 160px;
 }
 
@@ -93,7 +93,6 @@
   color: #4b4f51;
 
   max-width: 55ch;
- 
 }
 
 .prevention__num {
@@ -104,9 +103,44 @@
 }
 
 .prevention__right {
-    margin-top: 2rem;
+  margin-top: 2rem;
   align-self: center;
   margin-left: 1rem;
   width: 455px;
   height: 500px;
+}
+
+.prevention__fixed-left {
+  width: 130px;
+  height: 320px;
+  float: left;
+  top: -18rem;
+  position: relative;
+}
+
+.prevention__rightFixed {
+    width: 209px;
+    height: 375px;
+    float: right;
+    position: relative;
+    left: 11rem;
+    margin-top: 12rem;
+}
+
+.prevention__rightFixed0 {
+    float: right;
+    margin-top: -3rem;
+    // top: -37rem;
+    width: 100px;
+    height: 300px;
+    position: relative;
+    // left: 11rem;
+     filter: invert(59%) sepia(44%) saturate(7049%) hue-rotate(129deg) brightness(91%) contrast(70%);
+}
+
+
+@media all and (max-width: 948px) {
+    .prevention__rightFixed, .prevention__rightFixed0 {
+        display: none;
+    }
 }
