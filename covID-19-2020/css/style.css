@@ -434,4 +434,70 @@ p {
   color: #4b4f51;
   margin-left: -5rem;
 }
+
+.contagion__cards {
+  margin-bottom: 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contagion__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  width: 460px;
+  height: 575px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+}
+
+.contagion__cardImg {
+  width: 269.5px;
+  height: 249px;
+}
+
+.contagion__card-h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.3rem;
+  text-transform: capitalize;
+  padding-top: 4.5rem;
+  color: #035755;
+}
+
+.contagion__card-p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 185%;
+  max-width: 50ch;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1.3rem;
+  color: #4B4F51;
+}
+
+.card1 {
+  border-bottom: 5px solid #FA5652;
+}
 /*# sourceMappingURL=style.css.map */
