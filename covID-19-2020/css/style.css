@@ -902,7 +902,7 @@ p {
   width: 60%;
   height: 114px;
   color: #758681;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
   border-radius: 57px;
@@ -912,13 +912,13 @@ p {
 .contact__btn {
   width: 209px;
   height: 78px;
-  background: #F44A45;
+  background: #f44a45;
   border-radius: 157px;
   font-style: normal;
   font-weight: 500;
   font-size: 3rem;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 1rem;
   margin-left: -16rem;
 }
@@ -938,6 +938,47 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.footer {
+  background: #FFF8F8;
+  margin-top: -3rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2fr;
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-rows: 2fr;
+}
+
+.footer__list, .footer__icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-column-gap: 3rem;
+  margin-left: 12rem;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+@media all and (max-width: 1230px) {
+  .footer__grid {
+    display: block;
+  }
+  .footer__logo {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
